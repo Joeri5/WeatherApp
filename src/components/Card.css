@@ -1,0 +1,48 @@
+.card {
+    @apply bg-dark w-8/12 h-1/2 rounded-xl shadow-lg;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_container {
+    @apply px-9 py-10;
+}
+
+.card_header {
+    @apply flex justify-between items-center;
+}
+
+.card_header_title > span {
+    @apply font-bold text-3xl;
+}
+
+.card_header_title > p {
+    @apply text-sm font-thin;
+}
+
+.card_header > a {
+    @apply px-3 py-2 bg-primary rounded-lg;
+    transition: 0.25s all;
+}
+
+.card_header > a:hover {
+    @apply rounded-xl shadow-md;
+}
+
+hr {
+    @apply opacity-10; 
+}
+.card_container > hr {
+    @apply my-4;
+}
+
+.card_header_select {
+    @apply px-2 py-1 rounded-lg bg-primary;
+}
+
+.card_header_select:active, .card_header_select:focus{
+    @apply shadow-lg;
+}

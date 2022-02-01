@@ -1,0 +1,29 @@
+.weathercard {
+    @apply bg-background rounded-lg;
+    transition: 0.3s all;
+}
+
+.weathercard:hover {
+    @apply shadow-md;
+    transform:scale(1.02);
+}
+
+.weathercard_title {
+    @apply font-bold text-lg align-middle text-center mt-3;
+}
+
+.weathercard > hr {
+    @apply mt-1 mb-3 mx-3;
+}
+
+.weathercard_body {
+    @apply px-4 pb-2;
+}
+
+.weathercard_item {
+    @apply flex justify-between mb-2;
+}
+
+.weathercard_tag {
+    @apply bg-primary px-2 py-0.5 rounded-lg;
+}
